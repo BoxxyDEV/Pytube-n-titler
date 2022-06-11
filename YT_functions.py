@@ -30,15 +30,7 @@ def GrabMonthString(Month1): # proberly a better way to do this
         return 'Incorrect'
 
 def GrabVideoInformation(YTURL): # Prints and writes a file (if requested)
-    viddata = 'User Name       - ' + YTURL.author # prints Username example ('PewDiePie')
-    + '\nUser Channel ID - ' + YTURL.channel_id # prints channel name example ('UCWyiqU4LAbrxNX7_Llw8D3w')
-    + '\nVideo Title     - ' + YTURL.title # prints the YouTube Title of the video
-    + '\nVideo Views     - ' + str(YTURL.views) # prints how many views the video has
-    + '\nUpload Date     - ' + str(YTURL.publish_date.day) + ' ' + GrabMonthString(YTURL.publish_date.month) + ' ' + str(YTURL.publish_date.year) # prints date that youtube video was published
-    + '\nAge Restricted  - ' + str(YTURL.age_restricted) # says if a video is age restricted (meaning that if you were to watch it on youtube it would show a message to verify age)
-    + '\nVideo Time (S)  - ' + str(YTURL.length) # shows video length in seconds
-    + '\nVideo Time (M)  - ' + str(int((YTURL.length)/60)) # gets video in seconds and then divides it into 60 and rounds to a whole number 
-    + '\nDescription_______ \n' + YTURL.description # displays the description on youtube 
+    viddata = 'User Name       - ' + YTURL.author + '\nUser Channel ID - ' + YTURL.channel_id + '\nVideo Title     - ' + YTURL.title + '\nVideo Views     - ' + str(YTURL.views) + '\nUpload Date     - ' + str(YTURL.publish_date.day) + ' ' + GrabMonthString(YTURL.publish_date.month) + ' ' + str(YTURL.publish_date.year) + '\nAge Restricted  - ' + str(YTURL.age_restricted) + '\nVideo Time (S)  - ' + str(YTURL.length) + '\nVideo Time (M)  - ' + str(int((YTURL.length)/60)) + '\nDescription_______ \n' + YTURL.description
     print(viddata) # prints viddata variable
     ask = input('Do you want to print to a .TXT file (y/n)? ') # takes input to ask if they want to write it to a text file
     if ask == 'y':
