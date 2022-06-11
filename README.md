@@ -6,6 +6,6 @@
 * Remove " - Topic" off the channel name in the artist metadata
 
 ## Library's Used
-[Colorama](https://github.com/tartley/colorama) by [Tartley](https://github.com/tartley) - Changing Text Color
-[PyTube](https://github.com/pytube/pytube) - Downloads the YouTube Video
-[Mutagen](https://github.com/quodlibet/mutagen) - Editing the Metadata
+[Colorama](https://github.com/tartley/colorama) by [Tartley](https://github.com/tartley) - Changing Text Color <br>
+[PyTube](https://github.com/pytube/pytube) - Downloads the YouTube Video <br>
+[Mutagen](https://github.com/quodlibet/mutagen) - Editing the Metadata <br>
