@@ -5,7 +5,7 @@
 * Change the Artist Metadata to the YouTube Channel Name
 * Remove " - Topic" off the channel name in the artist metadata
 
-## Library's Used
-[Colorama](https://github.com/tartley/colorama) by [Tartley](https://github.com/tartley) - Changing Text Color <br>
+## Dependancy's Used
 [PyTube](https://github.com/pytube/pytube) - Downloads the YouTube Video <br>
 [Mutagen](https://github.com/quodlibet/mutagen) - Editing the Metadata <br>
+[FFMPEG](https://ffmpeg.org/) - if on Windows place in the binary's in the directory
