@@ -1,6 +1,5 @@
 from pytube import *
 from YT_functions import *
-import colorama
 
 def on_progress(stream, chunk, bytes_remaining):
     progress_string = f' {round(100 - bytes_remaining / stream.filesize *100, 0)}'
@@ -18,12 +17,10 @@ while(True): # loops
     elif option1 == '2':
         DownloadVideo(video)
    
-    print(colorama.Fore.GREEN + '=========' + colorama.Fore.WHITE + 'Boxuga' + colorama.Fore.GREEN + '==========')
-    print('=========' + colorama.Fore.WHITE + 'Title' + colorama.Fore.GREEN + '===========')
-    print(colorama.Fore.BLUE+ YouTube(URL).title)
-    print(colorama.Fore.GREEN + '=========' + colorama.Fore.WHITE + 'Length' + colorama.Fore.GREEN +'==========')
-    print(colorama.Fore.BLUE + str(int(YouTube(URL).length/60)) + ' Minutes')
-    print(colorama.Fore.GREEN + '=========' + colorama.Fore.WHITE + 'Channel' + colorama.Fore.GREEN + '=========')
-    print(colorama.Fore.BLUE + YouTube(URL).author + colorama.Fore.WHITE)
-
-
+    print('=========Boxuga==========')
+    print('=========Title===========')
+    print(YouTube(URL).title)
+    print('=========Length==========')
+    print(str(int(YouTube(URL).length/60)) + ' Minutes')
+    print('=========Channel=========')
+    print(YouTube(URL).author)
