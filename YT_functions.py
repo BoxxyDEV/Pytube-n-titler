@@ -1,5 +1,4 @@
 import mutagen
-import colorama
 
 def GrabMonthString(Month1): # proberly a better way to do this
     if Month1 == 1:
@@ -67,7 +66,7 @@ def DownloadVideo(YTURL): # video downloader code
         elif selection == '0':
             YTURL.streams.get_audio_only().download(filename=str(fn + '.mp3')) 
     except AttributeError: # if video fails sends this error message
-            print(colorama.Fore.RED + 'Error:' + colorama.Fore.WHITE + ' Downloading. Please Try Lower The Resoulution (if video)')
+            print('Error: Downloading. Please Try Lower The Resoulution (if video)')
     if int(selection) >= 1:
         filen = str(fn + '.mp4')
     elif int(selection) == 0:
