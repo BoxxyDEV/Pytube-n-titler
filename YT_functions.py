@@ -1,3 +1,5 @@
+from fileinput import filename
+from time import strftime
 import datetime
 import mutagen
 import subprocess
@@ -44,7 +46,7 @@ def DownloadVideo(YTURL): # video downloader code
         if int(selection) >= 1:
             filen = str(fn + '.mp4')
         elif int(selection) == 0:
-            filen = str(VideoTitle + '.mp3')
+            filen = str(fn + '.mp3')
         with open(filen, 'r+b') as file:
             mediafile = mutagen.File(filen, easy=True)
             mediafile['title'] = VideoTitle
